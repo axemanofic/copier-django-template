@@ -1,0 +1,14 @@
+# Copier configuration 
+# https://copier.readthedocs.io/en/stable/configuring/
+
+# configuring template
+_subdirectory: project
+
+# questions
+project_name:
+    type: str
+    help: What is your project name?
+
+project_description:
+    type: str
+    help: What is your project description?

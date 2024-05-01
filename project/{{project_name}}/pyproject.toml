@@ -1,0 +1,26 @@
+# The pyproject.toml file is used to configure Poetry.
+# See https://python-poetry.org/docs/pyproject/ for the full documentation.
+[tool.poetry]
+name = "CM"
+version = "0.1.0"
+description = ""
+authors = ["Roman Sotnikov <axeman.ofic@gmail.com>"]
+packages = [{include = "src", from = ""}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^5.0"
+django-environ = "^0.11.2"
+
+[tool.poetry.scripts]
+app = 'scripts.django:run_manage'
+startapp = 'scripts.django:run_startapp'
+runserver = 'scripts.django:run_runserver'
+makemigrations = 'scripts.django:run_makemigrations'
+migrate = 'scripts.django:run_migrate'
+dev = 'scripts.django:run_runserver'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+

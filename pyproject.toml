@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "copier-django-template"
+version = "0.1.0"
+description = "Django Project Template"
+authors = ["Roman Sotnikov <axeman.ofic@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+copier = "^9.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
