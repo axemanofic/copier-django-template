@@ -41,7 +41,7 @@ Genearate project
 
 On the command line: 
 ```
-copier https://github.com/axemanofic/copier-django-template.git <path/to/destination>
+copier copy https://github.com/axemanofic/copier-django-template.git <path/to/destination>
 ```
 Or in Python code:
 
